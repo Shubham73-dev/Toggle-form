@@ -51,7 +51,7 @@ body{
 .form_2{
     background-color:#96c3eb;
 }
-
+/* customizing scroll-bar for google and safari */
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -67,7 +67,14 @@ body{
     border-radius: 5px;
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: navy;
-  }
+/* adding media conditions for mobile */
+@media(max-width:650px){
+    .main_conatiner{
+        width: 100% !important;
+    }
+}
+@media(max-width:950px){
+    .main_conatiner{
+        width: 65%;
+    }
+}
